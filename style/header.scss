@@ -1,0 +1,106 @@
+.container-header {
+  background-color: var(--page-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px;
+  width: 1920px;
+
+  @media screen and (min-width: 768px) {
+    padding: 29px 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 26px 40px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 86px;
+    gap: 24px;
+  }
+}
+
+.nav-link {
+  transition: 250ms;
+
+  &:hover {
+    color: var(--white-70);
+  }
+}
+
+.language-select {
+  cursor: pointer;
+  padding: 10px 16px;
+  border: none;
+  background-color: transparent;
+  color: var(--white-70);
+  transition: color 250ms ease;
+
+  &:hover {
+    color: var(--basic-text);
+  }
+}
+.header-controls {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.address-list {
+  display: flex;
+  gap: 16px;
+}
+
+.address-item a {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--white-70);
+  display: flex;
+  gap: 3px;
+  transition: all 250ms;
+
+  &:hover {
+    color: var(--basic-text);
+  }
+}
+
+.address-icon path {
+  fill: var(--basic-text);
+  transition: fill 250ms ease;
+}
+.button-burger {
+  background-color: transparent;
+  border: none;
+  color: var(--basic-text);
+}
+
+.for-mob-vers {
+  display: flex;
+  gap: 16px;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.list-tablet {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}

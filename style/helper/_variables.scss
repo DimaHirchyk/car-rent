@@ -1,0 +1,39 @@
+:root {
+  --basic-text: #fefeff;
+  --white-70: #bdbdbe;
+  --not-active-text: #919192;
+  --grey-text: #656566;
+
+  --color-bg: #121214;
+  --page-color: #1e1e20;
+  --grey-color: #39393b;
+  --light-grey: #4f4f51;
+
+  --btn-color: #b6886733;
+  --active-color-light: rgba(197, 160, 133, 1);
+  --active-color: #b68867;
+
+  --red-icon: #f04438;
+  --green-icon: #72d38d;
+
+  --font-family-base: "Inter", sans-serif;
+
+  --container-max-width: 393px;
+  --container-padding: 0 16px;
+}
+
+.container {
+  max-width: 393px;
+  padding: 0 16px;
+  margin-inline: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 228px;
+
+    max-width: 1920px;
+  }
+}

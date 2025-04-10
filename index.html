@@ -1,13 +1,545 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+
+    <link rel="stylesheet" href="./MainStyle.scss" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- //////////////   HEADER////////////// -->
+
+    <header>
+      <section class="container container-header">
+        <nav class="navigation">
+          <a class="icon-logo" href="/">
+            <svg width="126" height="15">
+              <use href="./asset/icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="">Book</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Help</a></li>
+            <li class="nav-item"><a class="nav-link" href="">FAQ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Rental Policies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Blog&Guides</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-controls">
+          <select class="language-select" name="language" id="language">
+            <option value="">EN</option>
+            <option value="">UA</option>
+          </select>
+
+          <address>
+            <ul class="address-list">
+              <li class="address-item">
+                <a href="">
+                  <svg class="address-icon" width="24" height="24">
+                    <use href="./asset/icons/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +123 456 7890
+                </a>
+              </li>
+
+              <li class="address-item">
+                <a href="">
+                  <svg class="address-icon" width="24" height="24">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-log-in-02"></use>
+                  </svg>
+                  Sign In
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="for-mob-vers">
+          <address>
+            <ul class="address-list list-tablet">
+              <li class="address-item">
+                <a href="">
+                  <svg class="address-icon" width="24" height="24">
+                    <use href="./asset/icons/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +123 456 7890
+                </a>
+              </li>
+            </ul>
+          </address>
+          <button class="button-burger">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./asset/icons/symbol-defs.svg#icon-menu-01"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <!-- //////////////   HEADER////////////// -->
+
+    <!-- //////////////   MAIN////////////// -->
+
+    <main class="container order-wrapper">
+      <div class="content-blocks">
+        <section class="product-page">
+          <div class="transition">
+            <ul class="transition-list">
+              <li class="transition-item">
+                <p class="transition-text">Home</p>
+              </li>
+              <li class="transition-item">
+                <p class="transition-text">Home</p>
+              </li>
+              <li class="transition-item">
+                <p class="transition-text">Volkswagen Touareg</p>
+              </li>
+            </ul>
+          </div>
+          <div class="content-product-page">
+            <div class="car-img-block">
+              <div class="ellipse-background"></div>
+              <img
+                class="car-img"
+                src="./asset/image/image.png"
+                alt="Volkswagen Touareg" />
+            </div>
+            <div class="car-info">
+              <h4 class="name-car">Volkswagen Touareg</h4>
+              <p class="price-car">32,98 <span class="money">EUR/day</span></p>
+
+              <h5 class="included-price">Included in Price</h5>
+              <ul class="list-included-price">
+                <li class="item-included-price">
+                  <svg class="icon-included-price" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                  </svg>
+                  <p class="text-included-price">Airport/City Fee</p>
+                </li>
+                <li class="item-included-price">
+                  <svg class="icon-included-price" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                  </svg>
+                  <p class="text-included-price">Local Tax</p>
+                </li>
+                <li class="item-included-price">
+                  <svg class="icon-included-price" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                  </svg>
+                  <p class="text-included-price">Registration Fee</p>
+                </li>
+                <li class="item-included-price">
+                  <svg class="icon-included-price" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                  </svg>
+                  <p class="text-included-price">Unlimited Mileage</p>
+                </li>
+              </ul>
+
+              <ul class="description-list">
+                <li class="description-item">
+                  <svg class="description-icon" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-icon-car-doors"></use>
+                  </svg>
+                  <p class="description-text">5 Doors</p>
+                </li>
+                <li class="description-item">
+                  <svg class="description-icon" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-luggage-01"></use>
+                  </svg>
+                  <p class="description-text">3 Suitcase</p>
+                </li>
+                <li class="description-item">
+                  <svg class="description-icon" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-tabler_manual-gearbox"></use>
+                  </svg>
+                  <p class="description-text">5 Manual</p>
+                </li>
+                <li class="description-item">
+                  <svg class="description-icon" width="16" height="16">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-users-01"></use>
+                  </svg>
+                  <p class="description-text">5 Passengers</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn-booking">Proceed to Booking</button>
+        </section>
+
+        <section class="progress">
+          <!-- для прогресу -->
+        </section>
+
+        <section class="options">
+          <div class="option-page">
+            <h3 class="option-title">Add on extras</h3>
+            <ul class="option-list">
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Icon"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Unlimited Mileage</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Icon-1"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Cross-border Fee</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Vector"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Full Tank Service</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-icon_-Baby-seat2"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Child Seat</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Icon-2"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">GPS Navigation System</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Icon-3"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Wi-Fi Hotspot Wi-Fi Hotspot</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use
+                      href="./asset/icons/symbol-defs.svg#icon-Icon_-additional-driver"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Additional Driver</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+              <li class="option-item">
+                <div class="content-option">
+                  <svg class="icon-option" width="20" height="20">
+                    <use href="./asset/icons/symbol-defs.svg#icon-Icon-4"></use>
+                  </svg>
+                  <div class="text-option">
+                    <p class="name-option">Roadside assistance waiver</p>
+                    <p class="price-option">15 EUR</p>
+                  </div>
+                </div>
+                <button class="btn-options">+</button>
+              </li>
+            </ul>
+            <button class="btn-continue">Continue</button>
+          </div>
+        </section>
+
+        <section class="insurances">
+          <div class="insurance">
+            <h3 class="head-title-insurance">Insurance</h3>
+
+            <div class="container-insurance">
+              <div class="card-insurance no-insurance">
+                <h3 class="title-insurance">No Insurance</h3>
+                <p class="title-insurance-span">Free</p>
+
+                <p class="no-insurance-impotent">Important Notice:</p>
+
+                <ul class="insurance-list">
+                  <li class="insurance-item">
+                    <svg class="warning-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-Icon-5"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      You are fully responsible for any damage to the vehicle.
+                    </p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg class="insurance-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-Icon-5"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Full repair costs will be charged in case of an accident
+                      or damage (no financial limit).
+                    </p>
+                  </li>
+                </ul>
+                <p class="warning">
+                  We strongly recommend choosing one of the insurance options to
+                  ensure a worry-free journey.
+                </p>
+              </div>
+
+              <div class="card-insurance basic-insurance">
+                <h4 class="title-insurance">Basic Insurance</h4>
+                <p class="title-insurance-span">15 EUR/day</p>
+
+                <ul class="insurance-list">
+                  <li class="insurance-item">
+                    <svg class="insurance-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Coverage for vehicle damage in case of an accident (with
+                      excess).
+                    </p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg class="insurance-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Limited financial liability with a deductible/excess.
+                    </p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg class="insurance-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Partial coverage for car body damages (does not cover
+                      tires, windows, roof, or undercarriage).
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-insurance comprehensive-insurance">
+                <h4 class="title-insurance">Comprehensive Insurance</h4>
+                <p class="title-insurance-span">25 EUR/day</p>
+                <ul class="insurance-list">
+                  <li class="insurance-item">
+                    <svg
+                      class="insurance-icon comprehensive-icon"
+                      width="16"
+                      height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Full coverage for all damages (including tires, windows,
+                      roof, and undercarriage).
+                    </p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg
+                      class="insurance-icon comprehensive-icon"
+                      width="16"
+                      height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">Theft protection.</p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg class="comprehensive-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      No deductible/excess (or minimal excess).
+                    </p>
+                  </li>
+                  <li class="insurance-item">
+                    <svg class="comprehensive-icon" width="16" height="16">
+                      <use
+                        href="./asset/icons/symbol-defs.svg#icon-check-circle-broken"></use>
+                    </svg>
+                    <p class="insurance-text">
+                      Roadside assistance in case of breakdowns or accidents.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="forms">
+        <div class="order-form">
+          <h3 class="title-order">Confirming Order</h3>
+
+          <form class="rewiev-form">
+            <div class="rewiev">
+              <div class="rewiev-form-wraper">
+                <label class="label-input" for="user-first-name"
+                  >First Name <span class="star">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-first-name"
+                  required
+                  placeholder="Enter Your First Name" />
+              </div>
+
+              <div class="rewiev-form-wraper">
+                <label class="label-input" for="user-last-name">
+                  Last Name <span class="star">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-last-name"
+                  required
+                  placeholder="Enter Your Last Name" />
+              </div>
+
+              <div class="rewiev-form-wraper">
+                <label class="label-input" for="user-phone">
+                  Phone number<span class="star">*</span>
+                </label>
+                <div class="selectInputd">
+                  <input
+                    class="form-input"
+                    id="form-input"
+                    type="text"
+                    name="user-phone"
+                    required
+                    placeholder="+1 (555) 000-0000" />
+
+                  <select class="form-select-input" name="user-phone">
+                    <option value="">US</option>
+                    <option value="">UA</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="rewiev-form-wraper">
+                <label class="label-input" for="user-last-name">
+                  Email <span class="star">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-email"
+                  required
+                  placeholder="olivia@untitledui.com" />
+              </div>
+            </div>
+
+            <div class="card-form">
+              <ul class="card-form-list">
+                <li class="card-form-item">
+                  <p class="card-name-option">Date</p>
+                  <p class="card-name-price">Jan 1 | 08:00 - Jan 2 | 20:00</p>
+                </li>
+                <li class="card-form-item">
+                  <p class="card-name-option">Location</p>
+                  <p class="card-name-price">
+                    Bratislava Bus... - Bratislava Bus...
+                  </p>
+                </li>
+                <li class="card-form-item">
+                  <p class="card-name-option">Volkswagen Touareg</p>
+                  <p class="card-name-price">32,98 EUR</p>
+                </li>
+                <li class="card-form-item">
+                  <p class="card-name-option">Basic Insurance</p>
+                  <p class="card-name-price">15 EUR</p>
+                </li>
+
+                <li class="card-form-item card-total">
+                  <p class="card-total-name">Total</p>
+                  <p class="card-total-price">62,98 EUR</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input
+                class="review-form-checkbox visually-hidden"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                required />
+
+              <label class="review-form-checkbox-label" for="user-privacy">
+                <span class="custom-checkbox">
+                  <svg class="custom-chekbox-icon" width="10" height="8">
+                    <use href="./asset/icons/symbol-defs.svg#icon-OK"></use>
+                  </svg>
+                </span>
+                <span> I accept the terms & conditions </span>
+              </label>
+            </div>
+            <div class="btn-block">
+              <button class="btn-pay cash">Pay Cash</button>
+              <button class="btn-pay now">Pay Now</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- //////////////   MAIN////////////// -->
   </body>
 </html>

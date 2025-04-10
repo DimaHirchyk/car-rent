@@ -1,0 +1,212 @@
+.transition {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-inline: auto;
+  }
+}
+.transition-list {
+  display: flex;
+  gap: 4px;
+}
+
+.product-page {
+  margin-top: 40px;
+  display: block;
+  margin-inline: auto;
+  @media screen and (min-width: 768px) {
+    margin-top: 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+.content-product-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 16px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 60px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    justify-content: space-between;
+    background-color: var(--page-color);
+    border-radius: 16px 16px 0 0;
+    padding: 48px 24px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 48px);
+      height: 1px;
+      background-color: var(--light-grey);
+      bottom: 0;
+    }
+  }
+}
+
+.ellipse-background {
+  position: absolute;
+  width: 415px;
+  height: 279px;
+  left: 50%;
+  top: 96px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff00 80%);
+  filter: blur(250px);
+  z-index: -1;
+
+  @media screen and (min-width: 768px) {
+    left: 67%;
+    top: 145px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    z-index: 0;
+  }
+}
+.car-img {
+  position: relative;
+  z-index: 1;
+  width: 361px;
+
+  @media screen and (min-width: 768px) {
+    width: 364px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 460px;
+  }
+}
+
+.car-info {
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+.name-car {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}
+.price-car {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+.money {
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+  }
+}
+.included-price {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+.list-included-price {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
+}
+.item-included-price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.text-included-price {
+  font-size: 14px;
+  line-height: 140%;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 300;
+  }
+}
+.description-list {
+  margin-top: 24px;
+  max-width: 302px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 74px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+.description-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.description-text {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 140%;
+}
+.btn-booking {
+  margin-top: 32px;
+  border: none;
+  width: 361px;
+  height: 56px;
+  border-radius: 8px;
+  color: var(--basic-text);
+  font-weight: 400;
+  display: block;
+  margin-inline: auto;
+
+  background-color: var(--btn-color);
+  transition: all 250ms;
+
+  &:hover {
+    background-color: var(--active-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

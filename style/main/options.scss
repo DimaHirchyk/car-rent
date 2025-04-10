@@ -1,0 +1,154 @@
+.option-page {
+  @media screen and (min-width: 1200px) {
+    background-color: var(--page-color);
+    padding: 16px 24px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 48px);
+      height: 1px;
+      background-color: var(--light-grey);
+      bottom: -15px;
+    }
+  }
+}
+
+.option-title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+.option-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    gap: 24px;
+    margin-top: 32px;
+  }
+}
+
+.option-item {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: calc((100% - 8px) / 2);
+  background-color: var(--grey-color);
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 24px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+.active-option-item {
+  background-color: var(--active-color);
+}
+
+.icon-option {
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.content-option {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+.text-option {
+  margin-top: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+
+    border-left: 1px solid var(--light-grey);
+    padding-left: 16px;
+  }
+}
+
+.name-option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+.price-option {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  margin-top: auto;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+.btn-options {
+  margin: -8px -16px;
+  width: 33px;
+  height: 108px;
+  border-radius: 0 16px 16px 0;
+  border: none;
+  background-color: var(--light-grey);
+  color: var(--basic-tex);
+  font-size: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 80px;
+  }
+}
+
+.active-btn-options {
+  background-color: var(--active-color-light);
+}
+
+.btn-continue {
+  width: 361px;
+  height: 56px;
+  border-radius: 16px;
+  margin-top: 32px;
+  display: block;
+  margin-inline: auto;
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--basic-tex);
+
+  transition: all 250ms;
+
+  &:hover {
+    background-color: var(--active-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

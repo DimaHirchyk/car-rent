@@ -1,0 +1,119 @@
+.insurance {
+  @media screen and (min-width: 1200px) {
+    padding: 40px 24px 48px;
+    background-color: var(--page-color);
+
+    margin-top: 0;
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+.container-insurance {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+.head-title-insurance {
+  margin-top: 28px;
+  margin-bottom: 24px;
+  font-size: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.card-insurance {
+  background-color: var(--grey-color);
+  padding: 16px;
+  border-radius: 16px;
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+.active-card-insurance {
+  background-color: var(--active-color);
+  background-image: url(../../asset/image/BG.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-insurance {
+  font-weight: 400;
+  text-align: center;
+  line-height: 100%;
+}
+.title-insurance-span {
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 32px;
+  }
+}
+
+.no-insurance-impotent {
+  margin-top: 16px;
+  line-height: 100%;
+}
+
+.insurance-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insurance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.insurance-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+.insurance-text {
+  font-size: 14px;
+  width: 305px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.warning {
+  margin-top: 16px;
+  color: var(--grey-text);
+  font-weight: 300;
+  font-size: 12px;
+
+  width: 100%;
+}
+.basic-insurance {
+}
+.basic-insurance-icon {
+  background: none;
+  fill: var(--basic-text);
+  stroke: none;
+}
+
+.comprehensive-icon {
+  stroke: var(--green-icon) !important;
+  fill: var(--green-icon) !important;
+}

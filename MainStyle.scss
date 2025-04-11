@@ -9,10 +9,8 @@
 @use "./style/main/options.scss";
 @use "./style/main/insurance.scss";
 @use "./style/main/form.scss";
-
-* {
-  outline: 1px solid red;
-}
+@use "./style/main/contact.scss";
+@use "./style/footer.scss";
 
 .order-wrapper {
   @media screen and (min-width: 1200px) {
@@ -35,5 +33,12 @@
     max-width: 448px;
     flex-shrink: 0;
     margin-left: 48px;
+  }
+}
+
+.contact {
+  // залишай пустим або додавай відступи як потрібно
+  @media screen and (min-width: 1200px) {
+    margin-top: 64px; // або будь-який інший
   }
 }

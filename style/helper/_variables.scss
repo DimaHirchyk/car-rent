@@ -17,9 +17,6 @@
   --green-icon: #72d38d;
 
   --font-family-base: "Inter", sans-serif;
-
-  --container-max-width: 393px;
-  --container-padding: 0 16px;
 }
 
 .container {
@@ -28,12 +25,10 @@
   margin-inline: auto;
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 0 16px;
+    padding: 0 40px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1920px;
-
-    padding: 0;
   }
 }

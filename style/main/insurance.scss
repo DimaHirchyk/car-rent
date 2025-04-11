@@ -1,5 +1,8 @@
 .insurance {
   @media screen and (min-width: 1200px) {
+    display: block;
+    margin-inline: auto;
+    width: 968px;
     padding: 40px 24px 48px;
     background-color: var(--page-color);
 

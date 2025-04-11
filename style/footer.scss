@@ -1,0 +1,131 @@
+.footer-block {
+  padding: 40px 0;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1464px;
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+.head-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.text-footer {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--white-70);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.footer-form {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 390px;
+  }
+}
+.label-input-footer {
+  font-size: 14px;
+  width: 100%;
+}
+.form-input-foter {
+  border: 1px solid var(--light-grey);
+  width: 237px;
+  height: 44px;
+  background-color: transparent;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: var(--white-70);
+
+  &:hover {
+    border: 1px solid var(--white-70);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 250px;
+  }
+}
+.btn-footer {
+  width: 108px;
+  height: 44px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: var(--btn-color);
+  transition: all 250ms;
+  border: none;
+  color: var(--basic-text);
+
+  &:hover {
+    background-color: var(--active-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 124px;
+  }
+}
+.content-footer {
+  position: relative;
+  margin-top: 56px;
+  padding-top: 32px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-grey);
+    top: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.content-text {
+  color: var(--white-70);
+  font-size: 14px;
+}
+.content-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.content-link {
+  color: var(--white-70);
+  font-size: 14px;
+  line-height: 140%;
+  transition: all 250ms;
+
+  &:hover {
+    color: var(--basic-text);
+  }
+}

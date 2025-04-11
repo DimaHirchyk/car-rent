@@ -196,11 +196,11 @@
   display: block;
   margin-inline: auto;
 
-  background-color: var(--btn-color);
+  background-color: var(--active-color);
   transition: all 250ms;
 
   &:hover {
-    background-color: var(--active-color);
+    background-color: var(--active-color-light);
   }
 
   @media screen and (min-width: 1200px) {

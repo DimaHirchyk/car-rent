@@ -1,4 +1,6 @@
 body {
+  overflow-x: hidden;
+  max-width: 1920px;
   font-family: var(--font-family-base);
   color: var(--basic-text);
   background-color: var(--color-bg);

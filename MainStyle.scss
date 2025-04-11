@@ -10,6 +10,10 @@
 @use "./style/main/insurance.scss";
 @use "./style/main/form.scss";
 
+* {
+  outline: 1px solid red;
+}
+
 .order-wrapper {
   @media screen and (min-width: 1200px) {
     margin-top: 64px;

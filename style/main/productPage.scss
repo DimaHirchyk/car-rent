@@ -17,10 +17,6 @@
   @media screen and (min-width: 768px) {
     margin-top: 34px;
   }
-
-  @media screen and (min-width: 1200px) {
-    margin: 0;
-  }
 }
 .content-product-page {
   display: flex;
@@ -38,6 +34,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    width: 968px;
     margin-top: 40px;
     justify-content: space-between;
     background-color: var(--page-color);

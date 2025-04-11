@@ -9,6 +9,9 @@
   --grey-color: #39393b;
   --light-grey: #4f4f51;
 
+  --overley: rgba(0, 0, 0, 0.5);
+  --modal-color: rgba(45, 45, 47, 1);
+
   --btn-color: #b6886733;
   --active-color-light: rgba(197, 160, 133, 1);
   --active-color: #b68867;
@@ -30,5 +33,12 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1920px;
+  }
+}
+
+.no-vision {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }

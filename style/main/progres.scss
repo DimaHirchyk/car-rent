@@ -1,0 +1,109 @@
+.progress {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.finish-progres {
+  border-top: 1px solid var(--white-70);
+  background-color: var(--page-color);
+  padding: 16px;
+  padding-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid var(--white-70);
+  }
+}
+
+.progress-steps {
+  height: 86px;
+}
+.steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  > .step {
+    position: relative;
+    display: table-cell;
+    font-size: 12px;
+    color: var(--grey-text);
+    text-align: center;
+    padding-top: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--grey-color);
+      z-index: 1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: var(--grey-color);
+      width: 100%;
+      height: 1px;
+      top: 11px;
+      left: 50%;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+
+    &.is-complete {
+      font-weight: 300;
+
+      &:before {
+        content: "✓";
+        top: 0px;
+        color: var(--basic-text);
+        width: 24px;
+        height: 24px;
+        background: var(--active-color-light);
+        line-height: 24px;
+        text-align: center;
+      }
+
+      &:after {
+        background: var(--active-color-light);
+      }
+    }
+
+    &.is-active {
+      &:before {
+        border: 2px solid var(--basic-text);
+        background: var(--active-color-light);
+      }
+    }
+  }
+}
+
+.content-progres {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+}
+.img-progres {
+  width: 72px;
+  height: 48px;
+}
+.text-content {
+}
+.name-car-progres {
+  font-weight: 500;
+  font-size: 18px;
+}
+.options-progres {
+  color: var(--white-70);
+}
+.numbers-day {
+}

@@ -1,16 +1,17 @@
 .insurance {
+  width: 968px;
+}
+
+.insurance-page {
   @media screen and (min-width: 1200px) {
-    display: block;
-    margin-inline: auto;
-    width: 968px;
     padding: 40px 24px 48px;
     background-color: var(--page-color);
+    min-width: 968px;
 
     margin-top: 0;
     border-radius: 0 0 16px 16px;
   }
 }
-
 .container-insurance {
   display: flex;
   flex-direction: column;
@@ -36,6 +37,11 @@
   background-color: var(--grey-color);
   padding: 16px;
   border-radius: 16px;
+
+  &:hover {
+    box-shadow: 0 3px 8px rgb(255, 255, 255);
+    transform: translateY(5px);
+  }
 
   @media screen and (min-width: 1200px) {
     width: 100%;

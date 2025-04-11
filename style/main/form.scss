@@ -1,3 +1,9 @@
+.forms {
+  width: 472px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
 .order-form {
   padding-bottom: 80px;
   @media screen and (min-width: 1200px) {
@@ -19,9 +25,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    gap: 8px;
   }
 
   @media screen and (min-width: 1200px) {
+    gap: 0;
     flex-direction: column;
   }
 }
@@ -30,9 +38,6 @@
   flex-direction: column;
   gap: 24px;
   margin-top: 24px;
-
-  flex: 1 1 50%;
-  order: 0;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
@@ -102,14 +107,10 @@
   padding: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-top: -55px;
-    width: 352px;
-    order: 2;
-    flex-shrink: 0;
+    width: 328px;
   }
 
   @media screen and (min-width: 1200px) {
-    order: 1;
     margin-top: 32px;
   }
 }
@@ -143,7 +144,6 @@
   margin-top: 24px;
 
   @media (min-width: 768px) {
-    order: 2;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 32px;

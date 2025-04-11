@@ -8,6 +8,7 @@
 
 .option-page {
   @media screen and (min-width: 1200px) {
+    width: 968px;
     background-color: var(--page-color);
     padding: 16px 24px;
     position: relative;
@@ -52,6 +53,11 @@
   width: calc((100% - 8px) / 2);
   background-color: var(--grey-color);
   justify-content: space-between;
+
+  &:hover {
+    box-shadow: 0 3px 8px rgb(255, 255, 255);
+    transform: translateY(5px);
+  }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 24px) / 2);

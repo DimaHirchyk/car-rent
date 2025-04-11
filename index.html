@@ -75,7 +75,7 @@
               </li>
             </ul>
           </address>
-          <button class="button-burger">
+          <button class="button-burger" data-modal-open>
             <svg class="burger-icon" width="24" height="24">
               <use href="./asset/icons/symbol-defs.svg#icon-menu-01"></use>
             </svg>
@@ -84,14 +84,9 @@
       </section>
     </header>
 
-    <!-- //////////////   HEADER////////////// -->
-
-    <!-- //////////////   MAIN////////////// -->
-
-    <main class="container order-wrapper">
-      <div class="content-blocks">
-        <!-- ////////    product-page //////// -->
-        <section class="product-page">
+    <main class="main">
+      <div class="main-section">
+        <section class="container product-page">
           <div class="transition">
             <ul class="transition-list">
               <li class="transition-item">
@@ -100,7 +95,7 @@
               <li class="transition-item">
                 <p class="transition-text">Home</p>
               </li>
-              <li class="transition-item">
+              <li class="transition-item active">
                 <p class="transition-text">Volkswagen Touareg</p>
               </li>
             </ul>
@@ -184,19 +179,31 @@
           <button class="btn-booking">Proceed to Booking</button>
         </section>
 
-        <!-- ////////    product-page //////// -->
-
-        <!-- ////////    PROGRES //////// -->
-
-        <section class="progress">
-          <!-- для прогресу -->
+        <section class="container progress no-vision">
+          <div class="finish-progres">
+            <div class="progress-steps">
+              <ul class="steps">
+                <li class="step is-complete">Add on extras</li>
+                <li class="step is-active">Insurance</li>
+                <li class="step">Confirm Order</li>
+                <li class="step">Payment</li>
+              </ul>
+            </div>
+            <div class="content-progres">
+              <img
+                class="img-progres"
+                src="./asset/image/small-car.png"
+                alt="car" />
+              <div class="text-content">
+                <h4 class="name-car-progres">Volkswagen Touareg</h4>
+                <p class="options-progres">or similar Intermediate</p>
+                <p class="numbers-day">1 rental day</p>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- ////////    PROGRES //////// -->
-
-        <!-- ////////    OPTIONS //////// -->
-
-        <section class="options">
+        <section class="container options no-vision">
           <div class="option-page">
             <h3 class="option-title">Add on extras</h3>
             <ul class="option-list">
@@ -305,12 +312,8 @@
           </div>
         </section>
 
-        <!-- ////////    OPTIONS //////// -->
-
-        <!-- ////////    INSURANCE //////// -->
-
-        <section class="insurances">
-          <div class="insurance">
+        <section class="container insurance no-vision">
+          <div class="insurance-page">
             <h3 class="head-title-insurance">Insurance</h3>
 
             <div class="container-insurance">
@@ -432,15 +435,12 @@
                 </ul>
               </div>
             </div>
+            <button class="btn-continue">Continue</button>
           </div>
         </section>
-
-        <!-- ////////    INSURANCE //////// -->
       </div>
 
-      <!-- ////////    FORMS //////// -->
-
-      <section class="forms">
+      <section class="container forms no-vision">
         <div class="order-form">
           <h3 class="title-order">Confirming Order</h3>
 
@@ -542,7 +542,7 @@
               <label class="review-form-checkbox-label" for="user-privacy">
                 <span class="custom-checkbox">
                   <svg class="custom-chekbox-icon" width="10" height="8">
-                    <use href="./asset/icons/symbol-defs.svg#icon-OK"></use>
+                    <use href="./asset/icons/icons.svg#icon-ok"></use>
                   </svg>
                 </span>
                 <span> I accept the terms & conditions </span>
@@ -556,31 +556,25 @@
         </div>
       </section>
 
-      <!-- ////////    FORMS //////// -->
-
-      <!-- ////////    CONTACT //////// -->
-
-      <!-- ////////    CONTACT //////// -->
-    </main>
-    <!-- //////////////   MAIN////////////// -->
-    <section class="contact">
-      <div class="contact-us">
-        <div class="contact-us-content">
-          <img
-            class="contact-us-img"
-            src="./asset/image/Avatar group.png"
-            alt="People"
-            width="142"
-            height="56" />
-          <h4 class="title-contact-us">Still have questions?</h4>
-          <p class="text-contact-us">
-            Can’t find the answer you’re looking for? Please chat to our
-            friendly team.
-          </p>
-          <button class="btn-contact-us">Contact Us</button>
+      <section class="contact">
+        <div class="contact-us">
+          <div class="contact-us-content">
+            <img
+              class="contact-us-img"
+              src="./asset/image/Avatar group.png"
+              alt="People"
+              width="142"
+              height="56" />
+            <h4 class="title-contact-us">Still have questions?</h4>
+            <p class="text-contact-us">
+              Can’t find the answer you’re looking for? Please chat to our
+              friendly team.
+            </p>
+            <button class="btn-contact-us">Contact Us</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="container">
       <section class="footer-block">
@@ -625,5 +619,59 @@
         </div>
       </section>
     </footer>
+
+    <div class="modal-overley" data-modal>
+      <div class="overley">
+        <div class="logo-block">
+          <a class="icon-logo" href="/">
+            <svg width="126" height="15">
+              <use href="./asset/icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="btn-exit" data-modal-close>
+            <svg class="exit-icon" width="24" height="24">
+              <use href="./asset/icons/icons.svg#icon-x-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="content-modal">
+          <nav>
+            <ul class="madal-list">
+              <li class="modal-item"><a class="modal-link" href="">Book</a></li>
+              <li class="modal-item"><a class="modal-link" href="">Help</a></li>
+              <li class="modal-item"><a class="modal-link" href="">FAQ</a></li>
+              <li class="modal-item">
+                <a class="modal-link" href="">Rental Policies</a>
+              </li>
+              <li class="modal-item">
+                <a class="modal-link" href="">Help Center</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="modal-foot">
+            <button class="btn-sign">
+              Sign In
+              <svg class="exit-icon" width="24" height="24">
+                <use href="./asset/icons/icons.svg#icon-log-in-02"></use>
+              </svg>
+            </button>
+            <div class="block-select">
+              <a href="">
+                <svg class="address-icon" width="24" height="24">
+                  <use href="./asset/icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +123 456 7890
+              </a>
+              <select class="language-select" name="language" id="language">
+                <option value="">EN</option>
+                <option value="">UA</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

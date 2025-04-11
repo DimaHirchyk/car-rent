@@ -9,36 +9,21 @@
 @use "./style/main/options.scss";
 @use "./style/main/insurance.scss";
 @use "./style/main/form.scss";
+@use "./style/main/progres.scss";
 @use "./style/main/contact.scss";
 @use "./style/footer.scss";
 
-.order-wrapper {
-  @media screen and (min-width: 1200px) {
-    margin-top: 64px;
-    display: flex;
-  }
-}
+@use "./style/modal.scss";
 
-.content-blocks {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
-    min-width: 968px;
-  }
-}
-
-.forms {
-  @media screen and (min-width: 1200px) {
-    max-width: 448px;
-    flex-shrink: 0;
-    margin-left: 48px;
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .contact {
-  // залишай пустим або додавай відступи як потрібно
-  @media screen and (min-width: 1200px) {
-    margin-top: 64px; // або будь-який інший
-  }
+  grid-column: 1 / -1;
 }

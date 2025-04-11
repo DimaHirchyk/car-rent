@@ -51,7 +51,7 @@
 
 .active-card-insurance {
   background-color: var(--active-color);
-  background-image: url(../../asset/image/BG.png);
+  background-image: url(./../asset/image/BG.png);
   background-position: center;
   background-size: cover;
 }
@@ -114,8 +114,7 @@
 
   width: 100%;
 }
-.basic-insurance {
-}
+
 .basic-insurance-icon {
   background: none;
   fill: var(--basic-text);

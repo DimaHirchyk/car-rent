@@ -27,6 +27,13 @@
 .contact {
   grid-column: 1 / -1;
 }
+.divvvvvv {
+  @media screen and (min-width: 1200px) {
+    width: calc(968px + 472px + 24px);
+    display: block;
+    margin-inline: auto;
+  }
+}
 
 .main-section {
   width: 393px;

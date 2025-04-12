@@ -5,6 +5,8 @@ body.modal-open {
 .modal-overley {
   background-color: var(--overley);
   position: fixed;
+  display: block;
+  margin-inline: auto;
   top: 0;
   left: 0;
   z-index: 999;
@@ -31,7 +33,9 @@ body.modal-open {
 }
 
 .overley {
+  padding-top: calc(52px + 24px);
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,41 +53,15 @@ body.modal-open {
   }
 }
 
-.logo-block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-bg);
-  padding: 16px;
-}
-
-.icon-logo-modal {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
 .content-modal {
   height: 100%;
-  padding: 24px 16px 36px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.btn-exit {
-  padding: 10px;
-  background-color: transparent;
-  border: none;
-
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-  }
-}
-
-.exit-icon {
-  fill: var(--grey-text);
-}
 .madal-list {
   display: flex;
   flex-direction: column;

@@ -54,11 +54,6 @@
   background-color: var(--grey-color);
   justify-content: space-between;
 
-  &:hover {
-    box-shadow: 0 3px 8px rgb(255, 255, 255);
-    transform: translateY(5px);
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 24px) / 2);
   }
@@ -79,16 +74,17 @@
   }
 }
 .content-option {
-  display: flex;
-  flex-direction: column;
-
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: row;
     gap: 15px;
   }
 }
 
 .text-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 8px;
 
   @media screen and (min-width: 768px) {

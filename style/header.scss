@@ -1,4 +1,7 @@
 .container-header {
+  height: 52px;
+  position: relative;
+  z-index: 10000;
   background-color: var(--page-color);
   display: flex;
   align-items: center;
@@ -12,6 +15,9 @@
 
   @media screen and (min-width: 1200px) {
     padding: 26px 40px;
+    height: 72px;
+    max-width: 1920px;
+    min-width: 1500px;
   }
 }
 
@@ -57,6 +63,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 406px;
   }
 }
 
@@ -82,10 +89,32 @@
   fill: var(--basic-text);
   transition: fill 250ms ease;
 }
-.button-burger {
+.button-toggle {
   background-color: transparent;
   border: none;
   color: var(--basic-text);
+}
+
+.btn-exit {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
+.button-toggle .exit-icon {
+  display: none;
+}
+
+.button-toggle.is-open .burger-icon {
+  display: none;
+}
+
+.button-toggle.is-open .exit-icon {
+  display: inline;
 }
 
 .for-mob-vers {

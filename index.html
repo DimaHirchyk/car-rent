@@ -75,9 +75,12 @@
               </li>
             </ul>
           </address>
-          <button class="button-burger" data-modal-open>
+          <button class="button-toggle" data-modal-toggle>
             <svg class="burger-icon" width="24" height="24">
               <use href="./asset/icons/symbol-defs.svg#icon-menu-01"></use>
+            </svg>
+            <svg class="exit-icon" width="24" height="24">
+              <use href="./asset/icons/icons.svg#icon-x-close"></use>
             </svg>
           </button>
         </div>
@@ -179,7 +182,7 @@
           <button class="btn-booking">Proceed to Booking</button>
         </section>
 
-        <section class="container progress no-vision">
+        <section class="progress no-vision">
           <div class="finish-progres">
             <div class="progress-steps">
               <ul class="steps">
@@ -207,7 +210,7 @@
           <div class="option-page">
             <h3 class="option-title">Add on extras</h3>
             <ul class="option-list">
-              <li class="option-item">
+              <li class="option-item active-option-item">
                 <div class="content-option">
                   <svg class="icon-option" width="20" height="20">
                     <use href="./asset/icons/symbol-defs.svg#icon-Icon"></use>
@@ -217,7 +220,7 @@
                     <p class="price-option">15 EUR</p>
                   </div>
                 </div>
-                <button class="btn-options">+</button>
+                <button class="btn-options active-btn-options">-</button>
               </li>
 
               <li class="option-item">
@@ -350,7 +353,7 @@
                 </p>
               </div>
 
-              <div class="card-insurance basic-insurance">
+              <div class="card-insurance basic-insurance active-card-insurance">
                 <h4 class="title-insurance">Basic Insurance</h4>
                 <p class="title-insurance-span">15 EUR/day</p>
 
@@ -455,7 +458,9 @@
                   type="text"
                   name="user-first-name"
                   required
-                  placeholder="Enter Your First Name" />
+                  placeholder="Enter Your First Name"
+                  pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{2,}"
+                  maxlength="15" />
               </div>
 
               <div class="rewiev-form-wraper">
@@ -467,7 +472,9 @@
                   type="text"
                   name="user-last-name"
                   required
-                  placeholder="Enter Your Last Name" />
+                  placeholder="Enter Your Last Name"
+                  pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{2,}"
+                  maxlength="15" />
               </div>
 
               <div class="rewiev-form-wraper">
@@ -478,12 +485,14 @@
                   <input
                     class="form-input"
                     id="form-input"
-                    type="text"
+                    type="number"
                     name="user-phone"
                     required
-                    placeholder="+1 (555) 000-0000" />
+                    placeholder="+1 (555) 000-0000"
+                    pattern="^\+380\d{9}$"
+                    maxlength="15" />
 
-                  <select class="form-select-input" name="user-phone">
+                  <select class="form-select-input" name="contry-code">
                     <option value="">US</option>
                     <option value="">UA</option>
                   </select>
@@ -496,10 +505,12 @@
                 </label>
                 <input
                   class="form-input"
-                  type="text"
+                  type="email"
                   name="user-email"
                   required
-                  placeholder="olivia@untitledui.com" />
+                  placeholder="olivia@untitledui.com"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$"
+                  maxlength="30" />
               </div>
             </div>
 
@@ -595,10 +606,12 @@
             >
             <input
               class="form-input-foter"
-              type="text"
+              type="email"
               name="user-email"
               required
-              placeholder="Enter your email" />
+              placeholder="olivia@untitledui.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$"
+              maxlength="30" />
 
             <button class="btn-footer">Subscribe</button>
           </form>
@@ -622,18 +635,6 @@
 
     <div class="modal-overley" data-modal>
       <div class="overley">
-        <div class="logo-block">
-          <a class="icon-logo-modal" href="/">
-            <svg width="126" height="15">
-              <use href="./asset/icons/symbol-defs.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <button class="btn-exit" data-modal-close>
-            <svg class="exit-icon" width="24" height="24">
-              <use href="./asset/icons/icons.svg#icon-x-close"></use>
-            </svg>
-          </button>
-        </div>
         <div class="content-modal">
           <nav>
             <ul class="madal-list">

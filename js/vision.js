@@ -8,9 +8,7 @@ document
         .querySelector(".container.product-page")
         .classList.remove("product-page");
 
-      document
-        .querySelector(".container.progress")
-        .classList.remove("no-vision");
+      document.querySelector(".progress").classList.remove("no-vision");
       document
         .querySelector(".container.options")
         .classList.remove("no-vision");
